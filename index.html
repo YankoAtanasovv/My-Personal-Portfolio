@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/3c64d06b35.js" crossorigin="anonymous"></script>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer - trainee</p>
+          <h1>Hi, I'm <span>Yanko</span><br />Atanasov from Bulgaria</h1>
+        </div>
+      </div>
+    </div>
+<!-- ---------------------------about page ---------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I am Yanko Atanasov, 24 years old, right now I am currently studying at Software
+University(SoftUni) and Udemy. Recently I successfully finished my JavaScript Web Developer
+jounrey. Currently, I am going deeper in the field of Web development with some courses in
+Udemy platform. I am willing to take my first steps in my career with actual project assignments.
+</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Back End</span><br>Using a Web Server / Working with the HTTP protocol</li>
+                            <li><span>Front End</span><br>Client applications with ReactJS</li>
+                            <li><span>MySQL</span><br>Working with relational databases - PostgreSQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Working with remote REST services</span><br>Component-based applications.
+</li>
+                            <li><span>Web Development</span><br>Designing Web Interfaces</li>
+                            <li><span>Working with server-side applications using Node.JS</span><br>Working with non-relational databases(MongoDB)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>January, 2023</span><br>Programming Fundamentals with JavaScript</li>
+                            <li><span>May, 2023</span><br>JavaScript Advanced/Applications modules</li>
+                            <li><span>October, 2023 </span><br>JavaScript Back-End / ReactJS modules</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- ---------------------------services page ---------------------------- -->
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Responsive Websites from the begging to the end!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Back-End</h2>
+                <p>Working with non-relational databases(MongoDB) and relational(PostgreSQL). Working with server-side applications using Node.JS</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Front-End</h2>
+                <p>Working with remote REST services, What is a Single Page Application. Client applications with ReactJS, Working with templates and routing
+</p>
+                <a href="#">Learn more</a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- ----------------------------portfolio--------------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Creating Notes with small React App</h3>
+                    <p>Quick and easy note-taking for your tasks.</p>
+                    <a href="https://github.com/YankoAtanasovv/Udemy-Progress/tree/main/Create%20a%20note%20-%20React"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Dice Game</h3>
+                    <p>Small dice game for two people. Just for fun.</p>
+                    <a href="https://github.com/YankoAtanasovv/Udemy-Progress/tree/main/Dice%20Game"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Blogger App</h3>
+                    <p>Write posts with friends. Options to delete and edit your post!</p>
+                    <a href="https://github.com/YankoAtanasovv/Udemy-Progress/tree/main/Small%20Blog%20Application"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/YankoAtanasovv/Udemy-Progress/tree/main" class="btn">See more</a>
+    </div>
+
+</div>
+
+<!-- ---------------------------------contact------------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> yankoatanasov453@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +359 88 977 9233</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/yanko.atanasov.96"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/uncl3qnch1k/?igsh=ODIxdjhvcG82cnFp&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/YankoAtanasovv"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/YankoAtanasov CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://formspree.io/f/xgegojlr"
+                 method="POST">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Yanko. Made with <i class="fa-solid fa-heart"></i> from YouTube Tutorials.</p>
+    </div>
+</div>
+
+
+
+
+    <script>
+        let tabLinks = document.getElementsByClassName("tab-links");
+        let tabContents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            };
+
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab");
+            };
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        let sideMenu = document.getElementById("sidemenu");
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+        function closeMenu() {
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+    </script>
+
+  </body>
+</html>
